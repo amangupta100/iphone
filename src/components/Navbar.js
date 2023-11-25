@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div>
       <div className="nav">
-      <img width="20" height="20" className='mx-10' src="https://img.icons8.com/ios-glyphs/30/mac-os.png" alt="mac-os"/>
+      <img width="20" height="20" className='logo' src="https://img.icons8.com/ios-glyphs/30/mac-os.png" alt="mac-os"/>
 
       <div className="part2">
         <a href=".am">Store</a>
@@ -22,8 +22,8 @@ export default function Navbar() {
       </div>
 
       <div className="part3">
-      <img width="20" height="20" src="https://img.icons8.com/material-rounded/24/search.png" alt="search"/>
-      <img width="20" height="20" src="https://img.icons8.com/ios/50/shopping-bag.png" alt="shopping-bag"/>
+      <img width="19" height="19" src="https://img.icons8.com/material-rounded/24/search.png" alt="search"/>
+      <img width="19" height="19" src="https://img.icons8.com/ios/50/shopping-bag.png" alt="shopping-bag"/>
 
       <div className="hmb" onClick={()=>{
         let cont = document.querySelector(".hmb-cont")
@@ -35,7 +35,7 @@ export default function Navbar() {
 
 
 
-        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8}} className="hmb-cont visi not_vis px-12 py-12">
+        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8}} className="hmb-cont visi">
         <a href="#">Store</a>
         <a href="#">Mac</a>
         <a href="#">iPad</a>
