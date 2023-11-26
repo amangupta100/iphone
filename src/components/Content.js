@@ -1,14 +1,15 @@
-import React, { useLayoutEffect, useRef,useState } from 'react'
+import React, { useLayoutEffect, useRef} from 'react'
 import {motion} from "framer-motion"
 import './Respon.css'
 import { Canvas } from '@react-three/fiber'
-import { Environment, OrbitControls,useGLTF } from '@react-three/drei'
+import { Environment, OrbitControls} from '@react-three/drei'
 import { Model } from '../assets/3d/Scene'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import { useF} from 'react';
 import phone from '../assets/images/iphone-hand-83782827.png'
-import Swiper from 'swiper'
+import { Swiper,SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export default function Content() {
   const SectionRef = useRef()
@@ -98,7 +99,9 @@ className="d3-cont" ref={SectionRef}>
 </div>
 
 <div className="page4">
-<h1 className="text-xl text-red-600"></h1>
+<Swiper slidesPerView={3}>
+  <SwiperSlide></SwiperSlide>
+</Swiper>
 </div>
 
 </div>

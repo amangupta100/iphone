@@ -22,8 +22,8 @@ export default function Navbar() {
       </div>
 
       <div className="part3">
-      <img width="19" height="19" src="https://img.icons8.com/material-rounded/24/search.png" alt="search"/>
-      <img width="19" height="19" src="https://img.icons8.com/ios/50/shopping-bag.png" alt="shopping-bag"/>
+      <img width="19" height="12" src="https://img.icons8.com/material-rounded/24/search.png" alt="search"/>
+      <img width="19" height="12" src="https://img.icons8.com/ios/50/shopping-bag.png" alt="shopping-bag"/>
 
       <div className="hmb" onClick={()=>{
         let cont = document.querySelector(".hmb-cont")
@@ -36,7 +36,13 @@ export default function Navbar() {
 
 
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8}} className="hmb-cont visi">
-        <a href="#">Store</a>
+        <a href="#" onClick={()=>{
+          let store_pro = document.querySelector(".store-p")
+          store_pro.classList.toggle("store-p-vis")
+          console.log("clicked")
+        }}>Store</a>
+        
+       
         <a href="#">Mac</a>
         <a href="#">iPad</a>
         <a href="#">iphone</a>
